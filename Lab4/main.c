@@ -12,16 +12,23 @@ struct user
 
 int add_user(struct user all_user[], int size)
 {
-	size++;
-	char ch_name, ch_second_name, ch_tel;
-	printf("Print name: ");
-	scanf("%s", all_user[size-1].name);
-	printf("Print second name: ");
-	scanf("%s", all_user[size-1].second_name);
-	printf("Print telefon number: ");
-	scanf("%s", all_user[size-1].tel);
-	printf("User was added!\n");
-	printf("==============================================\n\n");
+	if(size <= 100)
+	{
+		size++;
+		char ch_name, ch_second_name, ch_tel;
+		printf("Print name: ");
+		scanf("%s", all_user[size-1].name);
+		printf("Print second name: ");
+		scanf("%s", all_user[size-1].second_name);
+		printf("Print telefon number: ");
+		scanf("%s", all_user[size-1].tel);
+		printf("User was added!\n");
+		printf("==============================================\n\n");
+	}else
+	{
+		printf("Overflow of the directory! You can't add new user!\n");
+		printf("==============================================\n\n");
+	}
 
 	return size;
 }
@@ -119,7 +126,7 @@ void print_all(struct user all_user[], int size)
 int main(int argc, char const *argv[])
 {
 	struct user all_user[n];
-	int size = 0;
+	int size = 100;
 
 	int answer = 0;
 	while(1)
