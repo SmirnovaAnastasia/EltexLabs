@@ -4,14 +4,14 @@
 1. Подключение нескольких пользователей
 2. Информирование пользователей о появлении нового пользователя
 
-![plot](./Sreens/Sever_user.png)
+![plot](./Screens/Sever_user.png)
 
 3. Передача сообщений
 
-![plot](./Sreens/New_message.png)
+![plot](./Screens/New_message.png)
 
 4. Выход пользователя из чата после отправки "exit"
 
-![plot](./Sreens/Exit_user.png)
+![plot](./Screens/Exit_user.png)
 
-![plot](./Sreens/Exit_mess.png)
+![plot](./Screens/Exit_mess.png)
